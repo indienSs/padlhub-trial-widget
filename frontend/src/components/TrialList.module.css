@@ -1,0 +1,58 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.dayHeader {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 4px 2px;
+}
+
+.dayTitle {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--ph-font);
+  text-transform: capitalize;
+}
+
+.dayCount {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ph-muted);
+  font-family: var(--ph-font-mono);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 64px 24px;
+  text-align: center;
+  background: var(--ph-bg);
+  border: 1px dashed var(--ph-line-strong);
+  border-radius: var(--ph-radius);
+  color: var(--ph-muted);
+}
+
+.emptyTitle {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ph-font);
+}
+
+.emptyHint {
+  font-size: 0.9rem;
+  max-width: 360px;
+}

@@ -1,0 +1,38 @@
+.host {
+  position: fixed;
+  inset: auto 50% 24px 50%;
+  transform: translateX(-50%);
+  z-index: 100000;
+  pointer-events: none;
+}
+
+.toast {
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: var(--ph-font);
+  color: #fff;
+  font-size: 0.9rem;
+  font-weight: 500;
+  box-shadow: var(--ph-shadow-lg);
+  animation: ph-fade-in 0.18s ease-out;
+  max-width: min(90vw, 440px);
+}
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--ph-success);
+  flex: 0 0 auto;
+}
+
+.message {
+  line-height: 1.25;
+}

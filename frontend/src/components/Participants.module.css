@@ -1,0 +1,48 @@
+.row {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+
+.rings {
+  display: inline-flex;
+  align-items: center;
+}
+
+.guestRing {
+  margin-left: -10px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ph-bg-soft-2);
+  border: 2px solid var(--ph-bg);
+  color: var(--ph-muted);
+  font-size: 0.72rem;
+  font-weight: 700;
+  font-family: var(--ph-font-mono);
+}
+
+.label {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--ph-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.row[data-tone='empty'] .label {
+  color: var(--ph-accent-2);
+}
+
+.row[data-tone='full'] .label {
+  color: var(--ph-danger);
+}
+
+.row[data-tone='almost'] .label {
+  color: var(--ph-accent-2);
+}

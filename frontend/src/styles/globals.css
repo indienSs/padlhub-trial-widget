@@ -1,0 +1,96 @@
+:root {
+  /* Бренд-палитра из исходного конфига виджета group_and_game (VivaCRM). */
+  --ph-accent: #7744ff;
+  --ph-accent-2: #f8873d;
+  --ph-accent-soft: rgba(119, 68, 255, 0.12);
+  --ph-accent-2-soft: rgba(248, 135, 61, 0.14);
+  --ph-font: #1f1e20;
+  --ph-muted: #888889;
+  --ph-muted-2: #b5b5b6;
+  --ph-line: #ececec;
+  --ph-line-strong: #e0e0e0;
+  --ph-bg: #ffffff;
+  --ph-bg-soft: #f7f7f8;
+  --ph-bg-soft-2: #f1f0f3;
+  --ph-danger: #e0457b;
+  --ph-success: #2ea36b;
+
+  --ph-radius: 18px;
+  --ph-radius-sm: 12px;
+  --ph-radius-xs: 9px;
+
+  --ph-shadow: 0 8px 24px rgba(45, 38, 56, 0.06);
+  --ph-shadow-lg: 0 18px 48px rgba(45, 38, 56, 0.16);
+
+  --ph-font-sans: 'Onest', 'Inter Display', 'Inter', -apple-system, BlinkMacSystemFont,
+    'Segoe UI', sans-serif;
+  --ph-font-mono: 'Source Code Pro', 'SF Mono', ui-monospace, monospace;
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ph-widget {
+  --accent: var(--ph-accent);
+  --accent-2: var(--ph-accent-2);
+  font-family: var(--ph-font-sans);
+  color: var(--ph-font);
+  background: var(--ph-bg);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.ph-widget *,
+.ph-widget *::before,
+.ph-widget *::after {
+  box-sizing: border-box;
+}
+
+.ph-widget button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.ph-widget img {
+  display: block;
+  max-width: 100%;
+}
+
+.ph-widget ::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+}
+.ph-widget ::-webkit-scrollbar-thumb {
+  background: var(--ph-line-strong);
+  border-radius: 8px;
+}
+.ph-widget ::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+@keyframes ph-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes ph-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
